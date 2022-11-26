@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E6BD8B4BAC0B76D3B7647C7 /* Pods_BenyamList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15BB5BF2D4652C5F9A54D41B /* Pods_BenyamList.framework */; };
+		FF010334291E8B3700C038B4 /* NewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF010332291E8B3700C038B4 /* NewListCell.swift */; };
+		FF010335291E8B3700C038B4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF010333291E8B3700C038B4 /* CollectionViewCell.xib */; };
+		FF1DA72F290AB7DB0022B49C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DA72E290AB7DB0022B49C /* MainViewController.swift */; };
+		FF1DA733290ACC460022B49C /* ProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DA731290ACC460022B49C /* ProgressCell.swift */; };
+		FF1DA734290ACC460022B49C /* ProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1DA732290ACC460022B49C /* ProgressCell.xib */; };
+		FF1DA738290AD6950022B49C /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1DA736290AD6950022B49C /* ProgressTableViewCell.swift */; };
+		FF1DA739290AD6950022B49C /* ProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1DA737290AD6950022B49C /* ProgressTableViewCell.xib */; };
+		FF250930292F989700CBED18 /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25092F292F989700CBED18 /* UILabelPadding.swift */; };
+		FF2CB4B429094B1300775607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2CB4B329094B1300775607 /* AppDelegate.swift */; };
+		FF2CB4B629094B1300775607 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2CB4B529094B1300775607 /* SceneDelegate.swift */; };
+		FF2CB4BB29094B1300775607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2CB4B929094B1300775607 /* Main.storyboard */; };
+		FF2CB4BD29094B1600775607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2CB4BC29094B1600775607 /* Assets.xcassets */; };
+		FF2CB4C029094B1600775607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2CB4BE29094B1600775607 /* LaunchScreen.storyboard */; };
+		FF3950BD291BE06C00EA3003 /* Extension+data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3950BC291BE06C00EA3003 /* Extension+data.swift */; };
+		FF4E91602913F6F400162865 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E915F2913F6F400162865 /* Extension+UIColor.swift */; };
+		FF5345BA292F0EF200483C35 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5345B9292F0EF200483C35 /* Status.swift */; };
+		FF5345BC292F0F2000483C35 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5345BB292F0F2000483C35 /* Priority.swift */; };
+		FF6519CF29269FB900B4126D /* AllTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6519CE29269FB900B4126D /* AllTaskViewController.swift */; };
+		FF6519D22926A10E00B4126D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6519D12926A10E00B4126D /* CalendarViewController.swift */; };
+		FF6519D42926A28F00B4126D /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6519D32926A28F00B4126D /* WeekViewController.swift */; };
+		FF7E45872930DAE00030D76F /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7E45862930DAE00030D76F /* DateViewController.swift */; };
+		FF9A4675292D4C8F0032A6C5 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A4673292D4C8F0032A6C5 /* CategoryCell.swift */; };
+		FF9A4676292D4C8F0032A6C5 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9A4674292D4C8F0032A6C5 /* CategoryCell.xib */; };
+		FF9A467C292D51AC0032A6C5 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A467A292D51AC0032A6C5 /* TaskCell.swift */; };
+		FF9A467D292D51AC0032A6C5 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9A467B292D51AC0032A6C5 /* TaskCell.xib */; };
+		FFB033482927BA5300C51A06 /* WeekViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB033462927BA5300C51A06 /* WeekViewCell.swift */; };
+		FFB033492927BA5300C51A06 /* WeekViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB033472927BA5300C51A06 /* WeekViewCell.xib */; };
+		FFB0334B2927BC4200C51A06 /* WeekDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0334A2927BC4200C51A06 /* WeekDays.swift */; };
+		FFB0334D2927C2B700C51A06 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0334C2927C2B700C51A06 /* Extension+Date.swift */; };
+		FFBCBC872912B52E00E92D5B /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBCBC852912B52E00E92D5B /* CardTableViewCell.swift */; };
+		FFBCBC882912B52E00E92D5B /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBCBC862912B52E00E92D5B /* CardTableViewCell.xib */; };
+		FFBCBC932912B66500E92D5B /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBCBC912912B66500E92D5B /* CardCell.swift */; };
+		FFBCBC942912B66500E92D5B /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFBCBC922912B66500E92D5B /* CardCell.xib */; };
+		FFDA387D291D4DBB005EA2A3 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA387C291D4DBB005EA2A3 /* OverviewViewController.swift */; };
+		FFDA387F291D4DD1005EA2A3 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA387E291D4DD1005EA2A3 /* TaskListViewController.swift */; };
+		FFDA3881291D4E1A005EA2A3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA3880291D4E1A005EA2A3 /* Task.swift */; };
+		FFDA3883291D4E33005EA2A3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA3882291D4E33005EA2A3 /* Category.swift */; };
+		FFDA3885291D4E4B005EA2A3 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA3884291D4E4B005EA2A3 /* TaskList.swift */; };
+		FFDA3887291D4E5B005EA2A3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA3886291D4E5B005EA2A3 /* Card.swift */; };
+		FFDA3889291D4E6F005EA2A3 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA3888291D4E6F005EA2A3 /* Statistics.swift */; };
+		FFDA388C291D4E8C005EA2A3 /* CategoryColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA388B291D4E8C005EA2A3 /* CategoryColor.swift */; };
+		FFDA388F291D54DD005EA2A3 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA388D291D54DD005EA2A3 /* TaskTableViewCell.swift */; };
+		FFDA3890291D54DD005EA2A3 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFDA388E291D54DD005EA2A3 /* TaskTableViewCell.xib */; };
+		FFF507D6291D8EED00EAB5F6 /* NewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF507D5291D8EED00EAB5F6 /* NewListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15BB5BF2D4652C5F9A54D41B /* Pods_BenyamList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BenyamList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A98D5F252F9AD1FA016D608 /* Pods-BenyamList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BenyamList.release.xcconfig"; path = "Target Support Files/Pods-BenyamList/Pods-BenyamList.release.xcconfig"; sourceTree = "<group>"; };
+		937F384B036CC389CD717437 /* Pods-BenyamList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BenyamList.debug.xcconfig"; path = "Target Support Files/Pods-BenyamList/Pods-BenyamList.debug.xcconfig"; sourceTree = "<group>"; };
+		FF010332291E8B3700C038B4 /* NewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListCell.swift; sourceTree = "<group>"; };
+		FF010333291E8B3700C038B4 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		FF1DA72E290AB7DB0022B49C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FF1DA731290ACC460022B49C /* ProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCell.swift; sourceTree = "<group>"; };
+		FF1DA732290ACC460022B49C /* ProgressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressCell.xib; sourceTree = "<group>"; };
+		FF1DA736290AD6950022B49C /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
+		FF1DA737290AD6950022B49C /* ProgressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressTableViewCell.xib; sourceTree = "<group>"; };
+		FF25092F292F989700CBED18 /* UILabelPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
+		FF2CB4B029094B1300775607 /* BenyamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenyamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2CB4B329094B1300775607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF2CB4B529094B1300775607 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF2CB4BA29094B1300775607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF2CB4BC29094B1600775607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF2CB4BF29094B1600775607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF2CB4C129094B1600775607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3950BC291BE06C00EA3003 /* Extension+data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+data.swift"; sourceTree = "<group>"; };
+		FF4E915F2913F6F400162865 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		FF5345B9292F0EF200483C35 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		FF5345BB292F0F2000483C35 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		FF6519CE29269FB900B4126D /* AllTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTaskViewController.swift; sourceTree = "<group>"; };
+		FF6519D12926A10E00B4126D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		FF6519D32926A28F00B4126D /* WeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
+		FF7E45862930DAE00030D76F /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		FF9A4673292D4C8F0032A6C5 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		FF9A4674292D4C8F0032A6C5 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		FF9A467A292D51AC0032A6C5 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		FF9A467B292D51AC0032A6C5 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		FFB033462927BA5300C51A06 /* WeekViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewCell.swift; sourceTree = "<group>"; };
+		FFB033472927BA5300C51A06 /* WeekViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekViewCell.xib; sourceTree = "<group>"; };
+		FFB0334A2927BC4200C51A06 /* WeekDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDays.swift; sourceTree = "<group>"; };
+		FFB0334C2927C2B700C51A06 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		FFBCBC852912B52E00E92D5B /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		FFBCBC862912B52E00E92D5B /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		FFBCBC912912B66500E92D5B /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		FFBCBC922912B66500E92D5B /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		FFDA387C291D4DBB005EA2A3 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		FFDA387E291D4DD1005EA2A3 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		FFDA3880291D4E1A005EA2A3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FFDA3882291D4E33005EA2A3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FFDA3884291D4E4B005EA2A3 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		FFDA3886291D4E5B005EA2A3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FFDA3888291D4E6F005EA2A3 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		FFDA388B291D4E8C005EA2A3 /* CategoryColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryColor.swift; sourceTree = "<group>"; };
+		FFDA388D291D54DD005EA2A3 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		FFDA388E291D54DD005EA2A3 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		FFF507D5291D8EED00EAB5F6 /* NewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF2CB4AD29094B1300775607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6BD8B4BAC0B76D3B7647C7 /* Pods_BenyamList.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1189B931E5C27E19477DD194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15BB5BF2D4652C5F9A54D41B /* Pods_BenyamList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		452489C9B931F94E7FAB88DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				937F384B036CC389CD717437 /* Pods-BenyamList.debug.xcconfig */,
+				8A98D5F252F9AD1FA016D608 /* Pods-BenyamList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF010331291E8B1500C038B4 /* NewList */ = {
+			isa = PBXGroup;
+			children = (
+				FF010332291E8B3700C038B4 /* NewListCell.swift */,
+				FF010333291E8B3700C038B4 /* CollectionViewCell.xib */,
+			);
+			path = NewList;
+			sourceTree = "<group>";
+		};
+		FF1DA730290ACC190022B49C /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF9A4668292D42790032A6C5 /* Category */,
+				FFFE556D2926B35F00B33D7E /* WeekDays */,
+				FF010331291E8B1500C038B4 /* NewList */,
+				FFBCBC8A2912B60F00E92D5B /* Card */,
+				FFBCBC892912B60700E92D5B /* Progress */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FF1DA735290AD5F40022B49C /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FFBCBC842912B4FD00E92D5B /* Card */,
+				FFBCBC832912B4F200E92D5B /* Progress */,
+				FF3D4DCF291D400A00A68A6B /* Task */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		FF250931292F98A300CBED18 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				FF25092F292F989700CBED18 /* UILabelPadding.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		FF2CB4A729094B1300775607 = {
+			isa = PBXGroup;
+			children = (
+				FF2CB4B229094B1300775607 /* BenyamList */,
+				FF2CB4B129094B1300775607 /* Products */,
+				452489C9B931F94E7FAB88DC /* Pods */,
+				1189B931E5C27E19477DD194 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF2CB4B129094B1300775607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF2CB4B029094B1300775607 /* BenyamList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF2CB4B229094B1300775607 /* BenyamList */ = {
+			isa = PBXGroup;
+			children = (
+				FF4E915E2913F6D100162865 /* Extension */,
+				FF2CB4CA29094B5700775607 /* Controller */,
+				FF2CB4C929094B5200775607 /* View */,
+				FF2CB4C829094B4200775607 /* Model */,
+				FF2CB4C729094B2A00775607 /* Supporting folders */,
+				FF2CB4B929094B1300775607 /* Main.storyboard */,
+				FF2CB4BC29094B1600775607 /* Assets.xcassets */,
+				FF2CB4C129094B1600775607 /* Info.plist */,
+			);
+			path = BenyamList;
+			sourceTree = "<group>";
+		};
+		FF2CB4C729094B2A00775607 /* Supporting folders */ = {
+			isa = PBXGroup;
+			children = (
+				FF2CB4B329094B1300775607 /* AppDelegate.swift */,
+				FF2CB4B529094B1300775607 /* SceneDelegate.swift */,
+				FF2CB4BE29094B1600775607 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting folders";
+			sourceTree = "<group>";
+		};
+		FF2CB4C829094B4200775607 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA388A291D4E7D005EA2A3 /* Enum */,
+				FFDA3880291D4E1A005EA2A3 /* Task.swift */,
+				FFDA3882291D4E33005EA2A3 /* Category.swift */,
+				FFDA3884291D4E4B005EA2A3 /* TaskList.swift */,
+				FFDA3886291D4E5B005EA2A3 /* Card.swift */,
+				FFDA3888291D4E6F005EA2A3 /* Statistics.swift */,
+				FFB0334A2927BC4200C51A06 /* WeekDays.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF2CB4C929094B5200775607 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF1DA735290AD5F40022B49C /* TableViewCell */,
+				FF1DA730290ACC190022B49C /* CollectionViewCell */,
+				FF250931292F98A300CBED18 /* Label */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF2CB4CA29094B5700775607 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF6519CD29269F9000B4126D /* NewList */,
+				FF6519CC29269F7D00B4126D /* Main */,
+				FF6519CB29269F7600B4126D /* Cards */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF3D4DCF291D400A00A68A6B /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				FF9A4678292D51620032A6C5 /* AllPage */,
+				FF9A4679292D51770032A6C5 /* Main */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		FF4E915E2913F6D100162865 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF4E915F2913F6F400162865 /* Extension+UIColor.swift */,
+				FF3950BC291BE06C00EA3003 /* Extension+data.swift */,
+				FFB0334C2927C2B700C51A06 /* Extension+Date.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF6519CB29269F7600B4126D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				FF6519D02926A0F600B4126D /* All */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		FF6519CC29269F7D00B4126D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FF1DA72E290AB7DB0022B49C /* MainViewController.swift */,
+				FFDA387C291D4DBB005EA2A3 /* OverviewViewController.swift */,
+				FFDA387E291D4DD1005EA2A3 /* TaskListViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FF6519CD29269F9000B4126D /* NewList */ = {
+			isa = PBXGroup;
+			children = (
+				FFF507D5291D8EED00EAB5F6 /* NewListViewController.swift */,
+			);
+			path = NewList;
+			sourceTree = "<group>";
+		};
+		FF6519D02926A0F600B4126D /* All */ = {
+			isa = PBXGroup;
+			children = (
+				FF6519CE29269FB900B4126D /* AllTaskViewController.swift */,
+				FF6519D12926A10E00B4126D /* CalendarViewController.swift */,
+				FF6519D32926A28F00B4126D /* WeekViewController.swift */,
+				FF7E45862930DAE00030D76F /* DateViewController.swift */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		FF9A4668292D42790032A6C5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FF9A4673292D4C8F0032A6C5 /* CategoryCell.swift */,
+				FF9A4674292D4C8F0032A6C5 /* CategoryCell.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FF9A4678292D51620032A6C5 /* AllPage */ = {
+			isa = PBXGroup;
+			children = (
+				FF9A467A292D51AC0032A6C5 /* TaskCell.swift */,
+				FF9A467B292D51AC0032A6C5 /* TaskCell.xib */,
+			);
+			path = AllPage;
+			sourceTree = "<group>";
+		};
+		FF9A4679292D51770032A6C5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA388D291D54DD005EA2A3 /* TaskTableViewCell.swift */,
+				FFDA388E291D54DD005EA2A3 /* TaskTableViewCell.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FFBCBC832912B4F200E92D5B /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				FF1DA736290AD6950022B49C /* ProgressTableViewCell.swift */,
+				FF1DA737290AD6950022B49C /* ProgressTableViewCell.xib */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		FFBCBC842912B4FD00E92D5B /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FFBCBC852912B52E00E92D5B /* CardTableViewCell.swift */,
+				FFBCBC862912B52E00E92D5B /* CardTableViewCell.xib */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		FFBCBC892912B60700E92D5B /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				FF1DA731290ACC460022B49C /* ProgressCell.swift */,
+				FF1DA732290ACC460022B49C /* ProgressCell.xib */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		FFBCBC8A2912B60F00E92D5B /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FFBCBC912912B66500E92D5B /* CardCell.swift */,
+				FFBCBC922912B66500E92D5B /* CardCell.xib */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		FFDA388A291D4E7D005EA2A3 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				FFDA388B291D4E8C005EA2A3 /* CategoryColor.swift */,
+				FF5345B9292F0EF200483C35 /* Status.swift */,
+				FF5345BB292F0F2000483C35 /* Priority.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		FFFE556D2926B35F00B33D7E /* WeekDays */ = {
+			isa = PBXGroup;
+			children = (
+				FFB033462927BA5300C51A06 /* WeekViewCell.swift */,
+				FFB033472927BA5300C51A06 /* WeekViewCell.xib */,
+			);
+			path = WeekDays;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF2CB4AF29094B1300775607 /* BenyamList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2CB4C429094B1600775607 /* Build configuration list for PBXNativeTarget "BenyamList" */;
+			buildPhases = (
+				60ABAF68CE0E6D63F1C89CD7 /* [CP] Check Pods Manifest.lock */,
+				FF2CB4AC29094B1300775607 /* Sources */,
+				FF2CB4AD29094B1300775607 /* Frameworks */,
+				FF2CB4AE29094B1300775607 /* Resources */,
+				9964732783607D05BA473177 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BenyamList;
+			productName = BenyamList;
+			productReference = FF2CB4B029094B1300775607 /* BenyamList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF2CB4A829094B1300775607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FF2CB4AF29094B1300775607 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FF2CB4AB29094B1300775607 /* Build configuration list for PBXProject "BenyamList" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF2CB4A729094B1300775607;
+			productRefGroup = FF2CB4B129094B1300775607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF2CB4AF29094B1300775607 /* BenyamList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF2CB4AE29094B1300775607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2CB4C029094B1600775607 /* LaunchScreen.storyboard in Resources */,
+				FF1DA739290AD6950022B49C /* ProgressTableViewCell.xib in Resources */,
+				FF2CB4BD29094B1600775607 /* Assets.xcassets in Resources */,
+				FFBCBC942912B66500E92D5B /* CardCell.xib in Resources */,
+				FF9A467D292D51AC0032A6C5 /* TaskCell.xib in Resources */,
+				FF1DA734290ACC460022B49C /* ProgressCell.xib in Resources */,
+				FFDA3890291D54DD005EA2A3 /* TaskTableViewCell.xib in Resources */,
+				FFB033492927BA5300C51A06 /* WeekViewCell.xib in Resources */,
+				FF2CB4BB29094B1300775607 /* Main.storyboard in Resources */,
+				FF9A4676292D4C8F0032A6C5 /* CategoryCell.xib in Resources */,
+				FFBCBC882912B52E00E92D5B /* CardTableViewCell.xib in Resources */,
+				FF010335291E8B3700C038B4 /* CollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60ABAF68CE0E6D63F1C89CD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BenyamList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9964732783607D05BA473177 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BenyamList/Pods-BenyamList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BenyamList/Pods-BenyamList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BenyamList/Pods-BenyamList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF2CB4AC29094B1300775607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDA387F291D4DD1005EA2A3 /* TaskListViewController.swift in Sources */,
+				FF2CB4B429094B1300775607 /* AppDelegate.swift in Sources */,
+				FFF507D6291D8EED00EAB5F6 /* NewListViewController.swift in Sources */,
+				FF1DA738290AD6950022B49C /* ProgressTableViewCell.swift in Sources */,
+				FFB033482927BA5300C51A06 /* WeekViewCell.swift in Sources */,
+				FF4E91602913F6F400162865 /* Extension+UIColor.swift in Sources */,
+				FFDA3887291D4E5B005EA2A3 /* Card.swift in Sources */,
+				FFDA387D291D4DBB005EA2A3 /* OverviewViewController.swift in Sources */,
+				FF9A467C292D51AC0032A6C5 /* TaskCell.swift in Sources */,
+				FF6519D42926A28F00B4126D /* WeekViewController.swift in Sources */,
+				FF5345BA292F0EF200483C35 /* Status.swift in Sources */,
+				FF5345BC292F0F2000483C35 /* Priority.swift in Sources */,
+				FF6519CF29269FB900B4126D /* AllTaskViewController.swift in Sources */,
+				FF3950BD291BE06C00EA3003 /* Extension+data.swift in Sources */,
+				FFDA3885291D4E4B005EA2A3 /* TaskList.swift in Sources */,
+				FFDA3889291D4E6F005EA2A3 /* Statistics.swift in Sources */,
+				FF7E45872930DAE00030D76F /* DateViewController.swift in Sources */,
+				FF010334291E8B3700C038B4 /* NewListCell.swift in Sources */,
+				FF2CB4B629094B1300775607 /* SceneDelegate.swift in Sources */,
+				FF250930292F989700CBED18 /* UILabelPadding.swift in Sources */,
+				FFDA388F291D54DD005EA2A3 /* TaskTableViewCell.swift in Sources */,
+				FF6519D22926A10E00B4126D /* CalendarViewController.swift in Sources */,
+				FFBCBC932912B66500E92D5B /* CardCell.swift in Sources */,
+				FF1DA733290ACC460022B49C /* ProgressCell.swift in Sources */,
+				FFDA3883291D4E33005EA2A3 /* Category.swift in Sources */,
+				FF1DA72F290AB7DB0022B49C /* MainViewController.swift in Sources */,
+				FFDA388C291D4E8C005EA2A3 /* CategoryColor.swift in Sources */,
+				FFB0334B2927BC4200C51A06 /* WeekDays.swift in Sources */,
+				FF9A4675292D4C8F0032A6C5 /* CategoryCell.swift in Sources */,
+				FFDA3881291D4E1A005EA2A3 /* Task.swift in Sources */,
+				FFBCBC872912B52E00E92D5B /* CardTableViewCell.swift in Sources */,
+				FFB0334D2927C2B700C51A06 /* Extension+Date.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF2CB4B929094B1300775607 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF2CB4BA29094B1300775607 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF2CB4BE29094B1600775607 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF2CB4BF29094B1600775607 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF2CB4C229094B1600775607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF2CB4C329094B1600775607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF2CB4C529094B1600775607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937F384B036CC389CD717437 /* Pods-BenyamList.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RYA52PLG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BenyamList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benyam.BenyamList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF2CB4C629094B1600775607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A98D5F252F9AD1FA016D608 /* Pods-BenyamList.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RYA52PLG7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BenyamList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benyam.BenyamList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF2CB4AB29094B1300775607 /* Build configuration list for PBXProject "BenyamList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2CB4C229094B1600775607 /* Debug */,
+				FF2CB4C329094B1600775607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2CB4C429094B1600775607 /* Build configuration list for PBXNativeTarget "BenyamList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2CB4C529094B1600775607 /* Debug */,
+				FF2CB4C629094B1600775607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF2CB4A829094B1300775607 /* Project object */;
+}
